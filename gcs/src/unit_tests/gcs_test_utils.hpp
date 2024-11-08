@@ -79,6 +79,7 @@ struct gt_group
 {
     struct gt_node* nodes[GT_MAX_NODES];
     int             nodes_num;
+    int             proto_ver;
     bool            primary;
 
     explicit gt_group(int num = 0, int gcs_proto_ver = 0, bool prim = true);
