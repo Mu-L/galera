@@ -173,6 +173,8 @@ gcs_core_param_get (gcs_core_t* core, const char* key);
 
 void gcs_core_get_status(gcs_core_t* core, gu::Status& status);
 
+void gcs_core_get_protocols(gcs_core_t* core, int& appl, int& repl, int& gcs);
+
 #ifdef GCS_CORE_TESTING // things compiled only for unit tests
 
 /* gcs_core_send() interface does not allow enough concurrency control to model
